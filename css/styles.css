@@ -1,0 +1,9 @@
+/* Estilos personalizados para el proyecto */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Color personalizado de fondo estilo gris oscuro profundo */
+.bg-black {
+    background-color: #0b0f19 !important;
+}
