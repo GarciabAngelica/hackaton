@@ -1,0 +1,153 @@
+/*!MERCANCIA OFICIAL*/
+
+.mercancia-section {
+  background-color: #0f0f0f;
+}
+
+.titulo-pequeno {
+  color: #f5a400;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.titulo-mercancia {
+  color: white;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.titulo-mercancia span {
+  color: #f5a400;
+}
+
+.ver-tienda {
+  color: #f5a400;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.ver-tienda:hover {
+  color: #ffc107;
+}
+
+.card-producto {
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-producto .card-title {
+  font-size: 0.9rem;
+}
+
+.card-producto .card-text {
+  font-size: 0.85rem;
+}
+
+/*!NOTICIAS Y DESTACADOS*/
+.noticias-section {
+  background-color: #0b0b0b;
+}
+
+.noticias-label {
+  color: #00d9ff;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.noticias-title {
+  color: #ffffff;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.noticias-title span {
+  color: #00d9ff;
+}
+
+.ver-todas {
+  color: #00d9ff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.ver-todas:hover {
+  color: #6eeeff;
+}
+
+/* Noticia principal */
+.noticia-principal {
+  min-height: 320px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #111;
+}
+
+.noticia-principal .card-img {
+  height: 320px;
+  object-fit: cover;
+}
+
+.noticia-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0)
+  );
+  padding: 2rem;
+}
+
+.categoria-principal {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.titulo-principal {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Tarjetas pequeñas */
+.noticia-card {
+  background-color: #1a1a1a;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.noticia-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.noticia-card .card-body {
+  padding: 1.2rem;
+}
+
+.categoria {
+  color: #00d9ff;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.noticia-card .card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.noticia-card .card-text {
+  color: #8f8f8f;
+  font-size: 0.85rem;
+  margin-bottom: 0;
+}
