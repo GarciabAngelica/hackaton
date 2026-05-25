@@ -5,7 +5,8 @@ El objetivo fue construir una página web temática de **lucha libre mexicana** 
 
 ---
 
-' ## 🧱 Estructura del proyecto
+ ## 🧱 Estructura del proyecto
+ ```text
 lucha-libre-hackathon/
 ├── index.html # Página principal (Home)
 ├── css/
@@ -35,8 +36,8 @@ lucha-libre-hackathon/
 │ ├── navbar.html # Barra de navegación reutilizable
 │ └── footer.html # Pie de página reutilizable
 └── README.md
-'
----
+
+```
 
 
 ---
