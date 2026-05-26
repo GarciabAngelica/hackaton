@@ -36,8 +36,33 @@ body {
     border-color: #262626;
 }
 
-/* El borde rojo de las cards.
+/* El borde rojo de las cards. */
 .seccion-luchadores .card.borde-rojo-actual {
     border: 2px solid #e74c3c;
     box-shadow: 0 0 15px rgba(231, 76, 60, 0.4);
+}
+/* NAVBAR */
+.logo-navbar{
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+    transition: .3s;
+}
+.logo-navbar:hover{
+    transform: scale(1.1);
+}
+.navbar{
+  border-bottom: 2px solid #dc3545;
+}
+.navbar-brand{
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+.nav-link{
+  color: white !important;
+  margin-left: 15px;
+  transition: .3s;
+}
+.nav-link:hover{
+  color: #dc3545 !important;
 }
