@@ -150,6 +150,30 @@ body {
   border-color: #333;
   color: rgba(255, 255, 255, 0.3);
 }
+/* NAVBAR */
+.logo-navbar{
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+    transition: .3s;
+}
+.logo-navbar:hover{
+    transform: scale(1.1);
+}
+.navbar{
+  border-bottom: 2px solid #dc3545;
+}
+.navbar-brand{
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+.nav-link{
+  color: white !important;
+  margin-left: 15px;
+  transition: .3s;
+}
+.nav-link:hover{
+  color: #dc3545 !important;
 
 .seccion-noticias {
   padding-top: 5%;
