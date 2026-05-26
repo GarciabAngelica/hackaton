@@ -19,7 +19,7 @@ const luchadoresleyenda = [
   },
   {
     id: 3,
-    nombre: "Soberano Jr.",
+    nombre: "Soberano Jr",
     bando: "Rudo",
     tecnica: "Tope suicida",
     biografia:
@@ -39,7 +39,7 @@ const luchadoresleyenda = [
     id: 5,
     nombre: "El Hijo del Vikingo",
     bando: "Técnico",
-    tecnica: "Cuerno del Vikingo (630 Senton)",
+    tecnica: "Cuerno del Vikingo",
     biografia:
       "Vikingo hizo su debut en la lucha libre profesional en 2017, su increíble agilidad, acrobacias y maniobras aéreas que dejaban al público asombrado. El estilo de Vikingo combina una mezcla de lucha libre y técnicas aéreas, demostrando su dominio de movimientos rápidos y desafiantes a la gravedad.",
     imagen: "../assets/luchadoresleyenda/Vikingo.jpg",
@@ -91,18 +91,18 @@ const luchadoresleyenda = [
   },
 ];
 function mostrarLuchadores() {
-  const contenedor = document.getElementById("contenedorLeyendas");
+    const contenedor = document.getElementById('contenedorLeyendas');
+    
+    // Limpiamos el contenedor antes de renderizar para que no se dupliquen
+    contenedor.innerHTML = "";
 
-  // Limpiamos el contenedor antes de renderizar para que no se dupliquen
-  contenedor.innerHTML = "";
-
-  // ForEach corregido con el nombre de la constante en minúsculas
-  luchadoresleyenda.forEach((luchador) => {
-    const tarjetaHTML = `
+    // ForEach corregido con el nombre de la constante en minúsculas
+    luchadoresleyenda.forEach(luchador => {
+        const tarjetaHTML = `
             <div class="col d-flex justify-content-center">
-        <div class="card h-100 borde-rojo-actual">
-            <img src="${luchador.imagen}" class="card-img-top" alt="${luchador.nombre}">
-            <div class="card-body">
+                <div class="card h-100 borde-rojo-actual" style="width: 18rem;">
+                    <img src="${luchador.imagen}" class="card-img-top" alt="${luchador.nombre}">
+                    <div class="card-body">
                         <h5 class="card-title">${luchador.nombre}</h5>
                         <p class="card-text">${luchador.biografia}</p>
                     </div>
@@ -113,8 +113,8 @@ function mostrarLuchadores() {
                 </div>
             </div>
         `;
-    contenedor.innerHTML += tarjetaHTML;
-  });
+        contenedor.innerHTML += tarjetaHTML;
+    });
 }
 
-document.addEventListener("DOMContentLoaded", mostrarLuchadores);
+document.addEventListener('DOMContentLoaded', mostrarLuchadores);
