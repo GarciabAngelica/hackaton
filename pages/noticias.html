@@ -1,160 +1,265 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Sección de Noticias ¡Lo ultimo en Lucha Libre! </title>
-    <link rel="stylesheet" href="../css/noticias.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sección de Noticias ¡Lo ultimo en Lucha Libre!</title>
+    <link rel="stylesheet" href="../css/noticias.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-black px-4">
+  <!-- NAVBAR -->
+  <nav
+    class="navbar navbar-expand-lg fixed-top navbar-dark bg-black px-4"
+    id="mainNavbar"
+  >
     <div class="container-fluid">
-      <!-- LOGO -->
-      <a class="navbar-brand fw-bold text-danger" href="../index.html">
-        <img
-        src="https://www.90sdvds.com/images/Mucha%20Lucha.png"
-        alt="Logo"
-        class="logo-navbar">
-      </a>
+      <a class="navbar-brand fw-bold text-uppercase" href="index.html">
+        🤼‍♂️ Mucha Lucha MX</a
+      >
       <!-- BOTÓN RESPONSIVE -->
       <button
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
-        data-bs-target="#menu">
+        data-bs-target="#menu"
+        aria-controls="navbarMain"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- MENÚ -->
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ms-auto">
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="../index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./mercancia.html">Mercancía</a>
+            <a class="nav-link" href="../Mercancia/mercancia.html">Mercancía</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./noticias.html">Noticias </a>
+            <a class="nav-link" href="../pages/noticias.html">Noticias</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./luchadores.html">Luchadores</a>
+            <a class="nav-link" href="../pages/luchadores.html">Luchadores</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-danger" href="./galeria.html">Galería
-            </a>
+            <a class="nav-link" href="../pages/galeria.html">Galería</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  
+
+  <body>
     <main class="container my-5">
-        
-    <div class="header-lucha">
-      <h1>NOTICIAS Y <span>DESTACADOS</span></h1>
-      <p>Toda la información del mundo de la lucha libre mexicana...</p>
-    </div>
-
-<div class="row mb-4 justify-content-end">
-    <div class="col-md-6">
-        <input type="text" id="buscador-noticias" class="form-control" placeholder="Buscar chisme o luchador...">
-    </div>
-</div>
-
-    <div class="row g-4">
-
-  <div class="col-12 d-flex justify-content-center">
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/0268/6173/1921/files/Img_blog_horizontal_3236b5b9-ec9a-4281-afb6-70e9d763e0f9.jpg?v=1668388134" alt="Card image cap">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title">¡Hay tiro! Duelo de apuestas confirmado</h5>
-        <p class="card-text text-muted flex-grow-1">Se rompieron las máscaras, se dieron con las sillas de primera fila y ya firmaron los contratos. ¡Máscara contra cabellera, papá!</p>
-        <a href="https://superluchas.com/lucha-libre-aaa-23-de-mayo-2026/" class="btn btn-primary mt-auto">Leer el chisme completo</a>
+      <div class="header-lucha">
+        <h1>NOTICIAS Y <span>DESTACADOS</span></h1>
+        <p>Toda la información del mundo de la lucha libre mexicana...</p>
       </div>
-    </div>
-  </div>
 
-  <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="https://www.radiomas.mx/wp-content/uploads/sites/6/2021/05/magia-blanca-regresado-brios-lucha_0_20_912_568.jpg" alt="Card image cap">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title">Investigan al réferi por "ceguera temporal"</h5>
-        <p class="card-text text-muted flex-grow-1">El "justiciero" del ring se volteó a platicar con una doña justo cuando los rudos aplicaban el faul más descarado de la década.</p>
-        <a href="https://superluchas.com/aew-double-or-nothing-2026/" class="btn btn-primary mt-auto">Ver el descaro</a>
+      <div class="row mb-4 justify-content-end">
+        <div class="col-md-6">
+          <input
+            type="text"
+            id="buscador-noticias"
+            class="form-control"
+            placeholder="Buscar chisme o luchador..."
+          />
+        </div>
       </div>
-    </div>
-  </div>
 
-  <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="https://www.prensalibre.com/wp-content/uploads/2018/12/b914f97b-e523-4c87-b489-9f1294ee723d.jpg?quality=52" alt="Card image cap">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title">Escasez mundial de salsa en la Coliseo</h5>
-        <p class="card-text text-muted flex-grow-1">Tragedia nacional. Aficionados reportan que las bolsas de papas grandes no traían suficiente salsa de la que sí pica.</p>
-        <a href="https://superluchas.com/saturday-nights-main-event-xliv/" class="btn btn-primary mt-auto">Revisar las chelas</a>
+      <div class="row g-4">
+        <div class="col-12 d-flex justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://cdn.shopify.com/s/files/1/0268/6173/1921/files/Img_blog_horizontal_3236b5b9-ec9a-4281-afb6-70e9d763e0f9.jpg?v=1668388134"
+              alt="Card image cap"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                ¡Hay tiro! Duelo de apuestas confirmado
+              </h5>
+              <p class="card-text text-muted flex-grow-1">
+                Se rompieron las máscaras, se dieron con las sillas de primera
+                fila y ya firmaron los contratos. ¡Máscara contra cabellera,
+                papá!
+              </p>
+              <a
+                href="https://superluchas.com/lucha-libre-aaa-23-de-mayo-2026/"
+                class="btn btn-primary mt-auto"
+                >Leer el chisme completo</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://www.radiomas.mx/wp-content/uploads/sites/6/2021/05/magia-blanca-regresado-brios-lucha_0_20_912_568.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                Investigan al réferi por "ceguera temporal"
+              </h5>
+              <p class="card-text text-muted flex-grow-1">
+                El "justiciero" del ring se volteó a platicar con una doña justo
+                cuando los rudos aplicaban el faul más descarado de la década.
+              </p>
+              <a
+                href="https://superluchas.com/aew-double-or-nothing-2026/"
+                class="btn btn-primary mt-auto"
+                >Ver el descaro</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://www.prensalibre.com/wp-content/uploads/2018/12/b914f97b-e523-4c87-b489-9f1294ee723d.jpg?quality=52"
+              alt="Card image cap"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Escasez mundial de salsa en la Coliseo</h5>
+              <p class="card-text text-muted flex-grow-1">
+                Tragedia nacional. Aficionados reportan que las bolsas de papas
+                grandes no traían suficiente salsa de la que sí pica.
+              </p>
+              <a
+                href="https://superluchas.com/saturday-nights-main-event-xliv/"
+                class="btn btn-primary mt-auto"
+                >Revisar las chelas</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://ksportspress.com/wp-content/uploads/2026/05/mitos-en-el-ring-2026-1-768x528.jpg"
+              alt="https://ksportspress.com/wp-content/uploads/2026/05/mitos-en-el-ring-2026-1-768x528.jpg"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                Exóticos peinan a la mala a la "Ola Ruda"
+              </h5>
+              <p class="card-text text-muted flex-grow-1">
+                Con puro beso volado, lances de pasarela y unas patadas
+                voladoras, la facción más glamorosa barrió el ring con los
+                rudazos.
+              </p>
+              <a
+                href="https://www.record.com.mx/tema/lucha-libre"
+                class="btn btn-primary mt-auto"
+                >Ver galería de peinados</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://blog.marti.mx/wp-content/uploads/2023/07/Lucha_libre_Header-jpg.webp"
+              alt="Card image cap"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Doña pelos rompe récord de gritos</h5>
+              <p class="card-text text-muted flex-grow-1">
+                La legendaria aficionada de la fila 3 demostró sus cuerdas
+                vocales tras gritarle 45 "¡Sáquese a bañar!" a un rudo.
+              </p>
+              <a
+                href="https://luchalibreaaa.com/blogs/noticias/convocatoria-lucha-por-el-barrio-2023-injuve-lucha-libre-aaa"
+                class="btn btn-primary mt-auto"
+                >Escuchar el audio</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/15/4f/1c/90.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                Buscan al "Rey del Aire" tras tope suicida
+              </h5>
+              <p class="card-text text-muted flex-grow-1">
+                El peso crucero se lanzó desde los postes, esquivó las luces y
+                según reportes de radar, todavía no cae a la tierra.
+              </p>
+              <a
+                href="https://cmll.com/resultados/"
+                class="btn btn-primary mt-auto"
+                >Ver órbita del luchador</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://cdn.milenio.com/uploads/media/2026/05/09/bts-lucha-libre-estadio-gnp.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                BTS en la Arena México al Asistir a Función de Lucha Libre
+              </h5>
+              <p class="card-text text-muted flex-grow-1">
+                La noche de este viernes, cuatro de los siete integrantes de BTS
+                sorprendieron a sus fans al asistir a una función de lucha libre
+                en la Ciudad de México.
+              </p>
+              <a
+                href="https://www.nmas.com.mx/entretenimiento/bts-desata-la-euforia-en-la-arena-mexico-al-asistir-a-funcion-de-lucha-libre/"
+                class="btn btn-primary mt-auto"
+                >Ver noticia</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-
-  <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="https://ksportspress.com/wp-content/uploads/2026/05/mitos-en-el-ring-2026-1-768x528.jpg" alt="https://ksportspress.com/wp-content/uploads/2026/05/mitos-en-el-ring-2026-1-768x528.jpg">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title">Exóticos peinan a la mala a la "Ola Ruda"</h5>
-        <p class="card-text text-muted flex-grow-1">Con puro beso volado, lances de pasarela y unas patadas voladoras, la facción más glamorosa barrió el ring con los rudazos.</p>
-        <a href="https://www.record.com.mx/tema/lucha-libre" class="btn btn-primary mt-auto">Ver galería de peinados</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="https://blog.marti.mx/wp-content/uploads/2023/07/Lucha_libre_Header-jpg.webp" alt="Card image cap">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title">Doña pelos rompe récord de gritos</h5>
-        <p class="card-text text-muted flex-grow-1">La legendaria aficionada de la fila 3 demostró sus cuerdas vocales tras gritarle 45 "¡Sáquese a bañar!" a un rudo.</p>
-        <a href="https://luchalibreaaa.com/blogs/noticias/convocatoria-lucha-por-el-barrio-2023-injuve-lucha-libre-aaa" class="btn btn-primary mt-auto">Escuchar el audio</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/15/4f/1c/90.jpg" alt="Card image cap">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title">Buscan al "Rey del Aire" tras tope suicida</h5>
-        <p class="card-text text-muted flex-grow-1">El peso crucero se lanzó desde los postes, esquivó las luces y según reportes de radar, todavía no cae a la tierra.</p>
-        <a href="https://cmll.com/resultados/" class="btn btn-primary mt-auto">Ver órbita del luchador</a>
-      </div>
-    </div>
-  </div>
-
-    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="https://cdn.milenio.com/uploads/media/2026/05/09/bts-lucha-libre-estadio-gnp.jpg" alt="Card image cap">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title">BTS en la Arena México al Asistir a Función de Lucha Libre</h5>
-        <p class="card-text text-muted flex-grow-1">La noche de este viernes, cuatro de los siete integrantes de BTS sorprendieron a sus fans al asistir a una función de lucha libre en la Ciudad de México.</p>
-        <a href="https://www.nmas.com.mx/entretenimiento/bts-desata-la-euforia-en-la-arena-mexico-al-asistir-a-funcion-de-lucha-libre/" class="btn btn-primary mt-auto">Ver noticia</a>
-      </div>
-    </div>
-  </div>
-
-
-        </div> <nav aria-label="Navegación de chismes" class="mt-5">
-            <ul class="pagination justify-content-center">
-                <li class="page-item disabled"><a class="page-link" href="#">Atrás</a></li>
-                <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
-            </ul>
-        </nav>
-
+      <nav aria-label="Navegación de chismes" class="mt-5">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#">Atrás</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+        </ul>
+      </nav>
     </main>
-    
+
     <script src="../js/noticias.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
+  <footer class="bg-black text-center text-light py-4">
+    © 2026 Hackathon Mucha Lucha - 🤼‍♂️ ¡De dos a tres caídas sin límite de
+    tiempo!
+  </footer>
 </html>

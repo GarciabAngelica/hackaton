@@ -11,7 +11,7 @@ body {
 /* Navbar */
 /* Estado inicial: transparente */
 #mainNavbar {
-    background-color: transparent !important;
+    background-color: black !important;
     transition: all 0.4s ease-in-out;
     box-shadow: none;
     backdrop-filter: blur(0px);
