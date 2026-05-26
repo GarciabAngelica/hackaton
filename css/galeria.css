@@ -132,8 +132,11 @@ h2 {
 /* FOOTER */
 footer {
   border-top: 2px solid #dc3545;
+  box-shadow: 0 -4px 15px rgba(245, 158, 11, 0.25);
   margin-top: 50px;
   font-size: 1rem;
+  background-color: #000;
+  color: white;
 }
 /* RESPONSIVE */
 @media (max-width: 768px) {

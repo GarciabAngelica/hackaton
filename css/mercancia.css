@@ -7,11 +7,12 @@ body {
   background:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
     url("https://wallpapers.com/images/featured/lucha-libre-mexicana-0k0r7o4zvh5n0o3k.jpg");
-
   background-size: cover;
   background-position: center;
-
-  border-bottom: 1px solid #333;
+  border-bottom: 70px solid #333;
+  margin-top: 50px;
+  padding-top: 50px !important;
+  padding-bottom: 90px !important;
 }
 
 /* CATEGORIAS */
@@ -69,27 +70,39 @@ body {
 }
 
 /* NAVBAR */
-.logo-navbar {
-  width: 200px;
-  height: 100px;
-  object-fit: contain;
-  transition: 0.3s;
-}
-.logo-navbar:hover {
-  transform: scale(1.1);
-}
 .navbar {
   border-bottom: 2px solid #dc3545;
 }
 .navbar-brand {
-  font-size: 1.8rem;
   letter-spacing: 2px;
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+.navbar-brand:hover {
+  color: #dc3545;
 }
 .nav-link {
   color: white !important;
   margin-left: 15px;
-  transition: 0.3s;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  transition:
+    color 0.3s ease,
+    border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent;
 }
 .nav-link:hover {
   color: #dc3545 !important;
+  border-bottom-color: #dc3545;
+}
+
+/* FOOTER */
+footer {
+  border-top: 2px solid #dc3545;
+  margin-top: 50px;
+  font-size: 1rem;
 }

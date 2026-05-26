@@ -1,68 +1,82 @@
 /* Estilos personalizados para el proyecto */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Color personalizado de fondo estilo gris oscuro profundo */
 .bg-black {
-    background-color: #0b0f19 !important;
+  background-color: #0b0f19 !important;
 }
 
 /* Navbar */
 /* Estado inicial: transparente */
 #mainNavbar {
-    background-color: black !important;
-    transition: all 0.4s ease-in-out;
-    box-shadow: none;
-    backdrop-filter: blur(0px);
+  background-color: black !important;
+  transition: all 0.4s ease-in-out;
+  box-shadow: none;
+  backdrop-filter: blur(0px);
+  border-bottom: 2px solid #f9a826 !important;
+  box-shadow: 0 4px 15px rgba(249, 168, 38, 0.25);
 }
 
 /* Cuando el navbar tiene la clase .scrolled (se activa con JS al hacer scroll) */
 #mainNavbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.85) !important;
-    backdrop-filter: blur(8px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.85) !important;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Enlaces del navbar */
 #mainNavbar .nav-link {
-    color: white;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 0.9rem;
-    margin: 0 0.5rem;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
-    border-bottom: 2px solid transparent;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  margin: 0 0.5rem;
+  transition:
+    color 0.3s ease,
+    border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent;
 }
 
 #mainNavbar .nav-link:hover {
-    color: #f9a826;  /* Color dorado / anaranjado tipo lucha libre */
-    border-bottom-color: #f9a826;
+  color: #f9a826; /* Color dorado / anaranjado tipo lucha libre */
+  border-bottom-color: #f9a826;
 }
 
 /* Marca (logo o texto) */
 #mainNavbar .navbar-brand {
-    color: white;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    transition: color 0.3s ease;
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
 }
 
 #mainNavbar .navbar-brand:hover {
-    color: #f9a826;
+  color: #f9a826;
 }
 
 /* Botón hamburguesa (toggler) en móvil */
 .navbar-toggler {
-    border-color: rgba(255,255,255,0.6);
+  border-color: rgba(255, 255, 255, 0.6);
 }
 
 .navbar-toggler-icon {
-    filter: invert(1);
+  filter: invert(1);
 }
 
 /* Ajuste para que el contenido no quede oculto debajo del navbar fijo */
 body {
-    padding-top: 70px;
+  padding-top: 0;
+}
+
+/* FOOTER */
+
+footer {
+  border-top: 2px solid #f9a826;
+  background-color: #111;
+  color: white;
+  margin-top: 50px;
+  font-size: 1rem;
 }

@@ -12,8 +12,11 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/home.css">
 </head>
+
+<body>
+
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-black px-4" id="mainNavbar">
+<nav class="navbar navbar-expand-lg navbar-dark bg-black px-4" id="mainNavbar">
   <div class="container-fluid">
     <a class="navbar-brand fw-bold text-uppercase" href="index.html">
       🤼‍♂️ Mucha Lucha MX</a>
@@ -22,7 +25,7 @@
       class="navbar-toggler" 
       type="button" 
       data-bs-toggle="collapse" 
-      data-bs-target="#menu" 
+      data-bs-target="#navbarMain" 
       aria-controls="navbarMain" 
       aria-expanded="false" 
       aria-label="Toggle navigation">
@@ -32,7 +35,7 @@
     <div class="collapse navbar-collapse" id="navbarMain">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="./Mercancia/mercancia.html">Mercancía</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pages/mercancia.html">Mercancía</a></li>
         <li class="nav-item"><a class="nav-link" href="./pages/noticias.html">Noticias</a></li>
         <li class="nav-item"><a class="nav-link" href="./pages/luchadores.html">Luchadores</a></li>
         <li class="nav-item"><a class="nav-link" href="./pages/galeria.html">Galería</a></li>
@@ -41,7 +44,8 @@
   </div>
 
 </nav>  
-<body>
+
+<main>
 
    <!-- MERCANCÍA OFICIAL -->
     <section class="mercancia-section">
@@ -50,10 +54,10 @@
           <div>
             <p class="section-kicker mb-0">Tienda Oficial</p>
             <h2 class="section-title mb-0">MERCANCÍA OFICIAL</h2>
-          <!-- </div>
+          </div>
 
-          <a href="../Mercancia/mercancia.html" class="section-link">Ver tienda →</a>
-        </div> -->
+          <a href="./pages/mercancia.html" class="section-link">Ver tienda →</a>
+        </div>
 
         <div class="productos-grid">
           <article class="producto-card">
@@ -138,10 +142,10 @@
           <div>
             <p class="section-kicker news-kicker mb-0">✦ Última Hora</p>
             <h2 class="section-title mb-0">NOTICIAS Y DESTACADOS</h2>
-          <!-- </div>
+          </div>
 
-          <a href="../pages/noticias.html" class="section-link">Ver todas →</a>
-        </div> -->
+          <a href="./pages/noticias.html" class="section-link">Ver todas →</a>
+        </div>
 
         <article class="noticia-principal">
           <img
@@ -204,12 +208,13 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    
     <script src="js/global.js"></script>
     <script src="js/home.js"></script>
 </body>
+<footer class="bg-black text-center text-light py-4">
+    <div class="container text-center">
+        <p class="small mb-0">&copy; 2026 Hackathon Mucha Lucha - 🤼‍♂️ ¡De dos a tres caídas sin límite de tiempo!</p>
+    
+      </div>
+</footer>
 </html>
