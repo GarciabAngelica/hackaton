@@ -11,29 +11,32 @@ body{
   overflow-x: hidden;
 }
 /* NAVBAR */
-.logo-navbar{
-    width: 200px;
-    height: 100px;
-    object-fit: contain;
-    transition: .3s;
-}
-.logo-navbar:hover{
-    transform: scale(1.1);
-}
 .navbar{
   border-bottom: 2px solid #dc3545;
 }
 .navbar-brand{
-  font-size: 1.8rem;
   letter-spacing: 2px;
+  color: white;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+.navbar-brand:hover {
+    color: #dc3545;
 }
 .nav-link{
   color: white !important;
   margin-left: 15px;
-  transition: .3s;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    transition: color .3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
 }
 .nav-link:hover{
   color: #dc3545 !important;
+  border-bottom-color: #dc3545;
 }
 /* HERO */
 .hero{

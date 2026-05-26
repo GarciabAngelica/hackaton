@@ -1,43 +1,79 @@
 body {
-    background-color: #0d0d0d !important;
-    min-height: 100vh;
+  background-color: #0d0d0d !important;
+  min-height: 100vh;
 }
 
 .seccion-luchadores .card {
-    background-color: #141414 !important;
-    border-radius: 16px !important;
-    overflow: hidden !important;
+  background-color: #141414 !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
 }
 
 .seccion-luchadores .card-body {
-    background-color: #141414 !important;
+  background-color: #141414 !important;
 }
 
 .seccion-luchadores .card-img-top {
-    width: 100% !important;
-    height: 320px !important;
-    object-fit: cover !important;
+  width: 100% !important;
+  height: 320px !important;
+  object-fit: cover !important;
 }
 
 .seccion-luchadores .card-title {
-    color: #ffffff !important;
-    font-weight: 700 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
 }
 
 .seccion-luchadores .card-text {
-    color: #e0e0e0 !important; /* Gris claro legible */
-    font-size: 0.9rem !important;
-    line-height: 1.4 !important;
+  color: #e0e0e0 !important; /* Gris claro legible */
+  font-size: 0.9rem !important;
+  line-height: 1.4 !important;
 }
 
 .seccion-luchadores .list-group-item {
-    background-color: #1c1c1c !important;
-    color: #ffffff !important;
-    border-color: #262626 !important;
+  background-color: #1c1c1c !important;
+  color: #ffffff !important;
+  border-color: #262626 !important;
+}
+
+/* NAVBAR */
+.navbar {
+  border-bottom: 2px solid #dc3545;
+}
+.navbar-brand {
+  letter-spacing: 2px;
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+.navbar-brand:hover {
+  color: #dc3545;
+}
+.nav-link {
+  color: white !important;
+  margin-left: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+    border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+.nav-link:hover {
+  color: #dc3545 !important;
+  border-bottom-color: #dc3545;
 }
 
 /* El borde rojo que se aplica a la clase inyectada por JS */
 .seccion-luchadores .card.borde-rojo-actual {
-    border: 2px solid #e74c3c !important;
-    box-shadow: 0 0 15px rgba(231, 76, 60, 0.4) !important;
+  border: 2px solid #e74c3c !important;
+  box-shadow: 0 0 15px rgba(231, 76, 60, 0.4) !important;
+}
+
+footer {
+  border-top: 2px solid #dc3545;
+  margin-top: 50px;
+  font-size: 1rem;
 }

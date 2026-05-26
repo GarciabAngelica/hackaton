@@ -12,47 +12,35 @@
   <link rel="stylesheet" href="../css/galeria.css">
 </head>
 <body>
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-black px-4">
-    <div class="container-fluid">
-      <!-- LOGO -->
-      <a class="navbar-brand fw-bold text-danger" href="../index.html">
-        <img
-        src="https://www.90sdvds.com/images/Mucha%20Lucha.png"
-        alt="Logo"
-        class="logo-navbar">
-      </a>
-      <!-- BOTÓN RESPONSIVE -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#menu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- MENÚ -->
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="./home.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./mercancia.html">Mercancía</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./noticias.html">Noticias </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./luchadores.html">Luchadores</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-danger" href="./galeria.html">Galería
-            </a>
-          </li>
-        </ul>
-      </div>
+ <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-black px-4" id="mainNavbar">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold text-uppercase" href="index.html">
+      🤼‍♂️ Mucha Lucha MX</a>
+ <!-- BOTÓN RESPONSIVE -->
+    <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#menu" 
+      aria-controls="navbarMain" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+ <!-- MENÚ -->
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../Mercancia/mercancia.html">Mercancía</a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/noticias.html">Noticias</a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/luchadores.html">Luchadores</a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/galeria.html">Galería</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+
+</nav>  
   <!-- HERO -->
 <section class="hero d-flex align-items-center">
   <div class="container hero-content">
@@ -164,7 +152,7 @@
 </section>
   <!-- FOOTER -->
   <footer class="bg-black text-center text-light py-4">
-    © 2026 MUCHA LUCHA
+    © 2026 Hackathon Mucha Lucha - 🤼‍♂️ ¡De dos a tres caídas sin límite de tiempo!
   </footer>
 <!-- MODAL EVENTOS -->
 <div
