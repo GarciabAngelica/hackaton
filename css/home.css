@@ -1,0 +1,191 @@
+/*!MERCANCIA OFICIAL*/
+
+.mercancia-section {
+  background-color: #111111;
+}
+
+.titulo-pequeno {
+  color: #f5a400;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.titulo-mercancia {
+  color: rgb(245, 158, 11);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.titulo-mercancia span {
+  color: #f5a400;
+}
+
+.ver-tienda {
+  color: #f5a400;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.ver-tienda:hover {
+  color: #06b6d4;
+}
+
+.card-producto {
+  background-color: #151515;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.producto-img-box {
+  width: 100%;
+  height: 170px;
+  background-color: #f5f5f5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.producto-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.card-producto .card-body {
+  padding: 1rem;
+}
+
+.card-producto .card-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.card-producto .card-text {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/*!NOTICIAS Y DESTACADOS*/
+.noticias-section {
+  background-color: #0b0b0b;
+}
+
+.last-new {
+  color: #fd1b28;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.noticias-title {
+  color: rgb(245, 158, 11);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.noticias-title span {
+  color: rgb(231, 76, 60);
+}
+
+.ver-todas {
+  color: #f59e0b;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.ver-todas:hover {
+  color: #06b6d4;
+}
+
+/*? Noticia principal */
+.noticia-principal {
+  min-height: 320px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #0b0b0b;
+}
+
+.noticia-principal .card-img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+}
+
+.noticia-principal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.noticia-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0)
+  );
+  padding: 2rem;
+}
+
+.categoria-principal {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.titulo-principal {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 1;
+}
+
+/*? Tarjetas pequeñas */
+.noticia-card {
+  background-color: #1a1a1a;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.noticia-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.noticia-card .card-body {
+  padding: 1.2rem;
+}
+
+.categoria {
+  color: rgb(245, 158, 11);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.noticia-card .card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.noticia-card .card-text {
+  color: fafafa;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.card-title {
+  font-size: 1rem;
+}
