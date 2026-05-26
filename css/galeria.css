@@ -1,315 +1,204 @@
 /* RESET */
-
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 /* BODY */
-
 body{
   background-color: #000;
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
-
 /* NAVBAR */
-
 .logo-navbar{
-    width: 100px;
+    width: 200px;
     height: 100px;
-    object-fit: cover;
+    object-fit: contain;
     transition: .3s;
-    border-bottom: 2px solid #faf5f5;
 }
-
 .logo-navbar:hover{
     transform: scale(1.1);
 }
-
 .navbar{
   border-bottom: 2px solid #dc3545;
 }
-
 .navbar-brand{
   font-size: 1.8rem;
   letter-spacing: 2px;
 }
-
 .nav-link{
   color: white !important;
   margin-left: 15px;
   transition: .3s;
 }
-
 .nav-link:hover{
   color: #dc3545 !important;
 }
-
 /* HERO */
-
 .hero{
-
   height: 100vh;
-
   background:
   linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.8)),
   url("https://wallpapercave.com/wp/wp7072567.jpg");
-
   background-size: cover;
   background-position: center;
-
   display: flex;
   align-items: center;
-
 }
-
 /* CONTENIDO HERO */
-
 .hero-content{
-
   text-align: left;
-
 }
-
-/* GALERÍA */
-
 .hero h1{
-
   color: #e9b6bb;
-
   text-shadow: 0 0 20px red;
-
   font-size: 3rem;
-
   font-weight: bold;
-
   text-transform: uppercase;
-
   letter-spacing: 3px;
-
   margin-bottom: 20px;
-
 }
-
-
-/* TÍTULO GRANDE */
-
 .hero h3{
-
   color: white;
-
   font-size: 3rem;
-
   font-weight: 800;
-
   text-transform: uppercase;
-
   line-height: 1;
-
   max-width: 800px;
-
   margin-bottom: 25px;
-
 }
-
-/* TEXTO PEQUEÑO */
-
 .hero h5{
-
   color: #d1d1d1;
-
   font-size: 1.2rem;
-
   font-weight: 400;
-
   max-width: 420px;
-
   line-height: 1.6;
-
 }
-
 /* BOTÓN */
-
 .btn-danger{
   padding: 12px 30px;
   font-weight: bold;
   border-radius: 10px;
   transition: .3s;
 }
-
 .btn-danger:hover{
   transform: scale(1.05);
 }
-
 /* TÍTULOS */
-
 h2{
   font-weight: bold;
   letter-spacing: 2px;
 }
-
 /* CATEGORÍAS */
-
 .category-card{
-
   background-color: #111;
-
   color: white;
-
   padding: 40px;
-
   text-align: center;
-
   border-radius: 20px;
-
   font-size: 1.3rem;
-
   font-weight: bold;
-
   transition: .4s;
-
   cursor: pointer;
-
   border: 1px solid #333;
-
 }
-
 .category-card:hover{
-
   transform: translateY(-10px);
-
   background-color: #dc3545;
-
   box-shadow: 0 0 20px red;
-
 }
-
 /* GALERÍA */
-
 .gallery-img{
-
   width: 100%;
-
   height: 350px;
-
   object-fit: cover;
-
   background-color: #111;
-
   border-radius: 20px;
-
   transition: .4s;
-
   cursor: pointer;
-
   border: 2px solid transparent;
-
 }
-
 .gallery-img:hover{
-
   transform: scale(1.03);
-
   border: 2px solid #dc3545;
-
   box-shadow: 0 0 25px red;
-
 }
-
 /* FOOTER */
-
 footer{
-
   border-top: 2px solid #dc3545;
-
   margin-top: 50px;
-
   font-size: 1rem;
-
 }
-
 /* RESPONSIVE */
-
 @media(max-width:768px){
-
   .hero{
-
     height: 70vh;
-
     text-align: center;
-
   }
-
+  .hero-content{
+    text-align: center;
+  }
   .hero h1{
-
     font-size: 2.5rem;
-
   }
-
+  .hero h3{
+    font-size: 2rem;
+  }
   .gallery-img{
-
     height: 250px;
-
   }
-
 }
-
-/* ========================= */
 /* MODALES */
-/* ========================= */
-
 .modal-content{
-
   border: 2px solid #dc3545;
-
   border-radius: 20px;
-
 }
-
 .modal-header{
-
   border-bottom: 1px solid #dc3545;
-
 }
-
 .modal-title{
-
   font-weight: bold;
-
   letter-spacing: 2px;
-
 }
-
 .modal-body{
-
   padding: 30px;
-
 }
-
 /* IMÁGENES MODAL */
-
 .modal .gallery-img{
-
-  width: 100%  
-
+  width: 100%;  
   height: 400px;
-
   object-fit: contain;
-
   background-color: #111;
-
-  border radius: 15px;
-
+  border-radius: 15px;
 }
-
 /* EFECTO HOVER */
-
 .modal .gallery-img:hover{
-
   transform: scale(1.03);
-
   box-shadow: 0 0 20px red;
-
+}
+/* CONTENEDOR */
+.img-container{
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+/* OVERLAY */
+.img-overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background:
+  linear-gradient(transparent, rgba(0,0,0,.9));
+}
+/* TEXTO */
+.img-overlay h4{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
