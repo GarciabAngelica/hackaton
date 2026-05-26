@@ -43,7 +43,7 @@ body {
   transition: color 0.3s ease;
 }
 .navbar-brand:hover {
-  color: #dc3545;
+  color: #dc3545 !important;
 }
 .nav-link {
   color: white !important;
@@ -149,6 +149,10 @@ body {
   background-color: #111;
   border-color: #333;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.seccion-noticias {
+  padding-top: 5%;
 }
 
 footer {

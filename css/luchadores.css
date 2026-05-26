@@ -71,6 +71,9 @@ body {
   border: 2px solid #e74c3c !important;
   box-shadow: 0 0 15px rgba(231, 76, 60, 0.4) !important;
 }
+.seccion-luchadores{
+    padding-top: 50px;
+}
 
 footer {
   border-top: 2px solid #dc3545;
